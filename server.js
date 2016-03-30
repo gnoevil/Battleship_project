@@ -6,7 +6,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var Game = require('./game.js');
 var mongoose = require('mongoose');
-
+// updated db info
 var games = {};
 
 io.on('connection', function(socket) {
