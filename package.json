@@ -9,6 +9,7 @@
   "author": "Po Chen Lin",
   "license": "MIT",
   "dependencies": {
+    "mongoose": "latest",
     "express": "^4.13.4",
     "lodash": "^3.10.1",
     "socket.io": "^1.4.5"
