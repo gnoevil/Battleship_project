@@ -1,6 +1,6 @@
 var path = require('path');
 var _ = require('lodash');
-var express = require('express')
+var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
@@ -20,7 +20,7 @@ io.on('connection', function(socket) {
       socket.disconnect('true');
     },120000);
   }
-  
+
   // bind event
   socket
   .on('disconnect', function() {
@@ -157,7 +157,7 @@ io.on('connection', function(socket) {
     }
     socket.heartbeat();
   });
-  
+
   socket.heartbeat();
 });
 
