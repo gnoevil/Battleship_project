@@ -164,7 +164,7 @@ var Grid = React.createClass({
               </div>
             </div>
             <div className="col-md-6">
-              <h3>Oppoenent's map</h3>
+              <h3>Opponent's map</h3>
               <OpMap/>
               <div className="btns">
                 {btn_random}
