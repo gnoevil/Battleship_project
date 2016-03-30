@@ -174,5 +174,5 @@ app.get('/react', function(req, res) {
 app.get('/backbone', function(req, res) {
   res.sendFile(path.join(__dirname + '/clients/backbone/index.html'));
 });
-
+console.log('BS Server listening on port 80');
 server.listen(process.env.PORT || 80);

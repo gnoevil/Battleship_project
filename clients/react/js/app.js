@@ -50,11 +50,11 @@ Grid = React.createClass({displayName: "Grid",
         var ph = !!this.state.ph?React.createElement("div", {className: clsGen(this.state.ph)}):"";
 
         return (
-          React.createElement("div", {className: "map", 
-            onClick: this.clickHandler, 
-            onMouseOver: this.mouseoverHandler}, 
-            React.createElement(Grid, {className: "inv"}), 
-            objs, ph, 
+          React.createElement("div", {className: "map",
+            onClick: this.clickHandler,
+            onMouseOver: this.mouseoverHandler},
+            React.createElement(Grid, {className: "inv"}),
+            objs, ph,
             React.createElement(Grid, null)
           )
         );
@@ -101,11 +101,11 @@ Grid = React.createClass({displayName: "Grid",
         var ph = !!this.state.ph?React.createElement("div", {className: clsGen(this.state.ph)}):"";
 
         return (
-          React.createElement("div", {className: "map", 
-            onClick: this.clickHandler, 
-            onMouseOver: this.mouseoverHandler}, 
-            React.createElement(Grid, {className: "inv"}), 
-            objs, ph, 
+          React.createElement("div", {className: "map",
+            onClick: this.clickHandler,
+            onMouseOver: this.mouseoverHandler},
+            React.createElement(Grid, {className: "inv"}),
+            objs, ph,
             React.createElement(Grid, null)
           )
         );
@@ -152,21 +152,21 @@ Grid = React.createClass({displayName: "Grid",
           }
         }
         return(
-          React.createElement("div", {className: "row"}, 
-            React.createElement("div", {className: "col-sm-12 sysmsg"}, this.state.sys_message), 
-            React.createElement("div", {className: "col-md-6"}, 
-              React.createElement("h3", null, "My map"), 
-              React.createElement(MyMap, null), 
-              React.createElement("div", {className: "btns"}, 
-                this.showStart()?React.createElement("button", {className: "btn btn-primary", onClick: this.start}, "Start"):"", 
-                this.showJoin()?React.createElement("button", {className: "btn btn-success", onClick: this.join}, "Join"):"", 
+          React.createElement("div", {className: "row"},
+            React.createElement("div", {className: "col-sm-12 sysmsg"}, this.state.sys_message),
+            React.createElement("div", {className: "col-md-6"},
+              React.createElement("h3", null, "My map"),
+              React.createElement(MyMap, null),
+              React.createElement("div", {className: "btns"},
+                this.showStart()?React.createElement("button", {className: "btn btn-primary", onClick: this.start}, "Start"):"",
+                this.showJoin()?React.createElement("button", {className: "btn btn-success", onClick: this.join}, "Join"):"",
                 this.showGameAlreayStart()?React.createElement("div", {class: "warning"}, "Game has alreay started. ", React.createElement("a", {onClick: this.roomHopping}, "Try another room")):""
               )
-            ), 
-            React.createElement("div", {className: "col-md-6"}, 
-              React.createElement("h3", null, "Oppoenent's map"), 
-              React.createElement(OpMap, null), 
-              React.createElement("div", {className: "btns"}, 
+            ),
+            React.createElement("div", {className: "col-md-6"},
+              React.createElement("h3", null, "Opponent's map"), 
+              React.createElement(OpMap, null),
+              React.createElement("div", {className: "btns"},
                 btn_random
               )
             )
